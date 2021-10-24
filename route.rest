@@ -1,0 +1,33 @@
+GET http://localhost:3000/students
+
+###
+GET http://localhost:3000/students/61759f6d254d03caf01a9313
+
+###
+POST http://localhost:3000/students
+Content-Type:  application/json
+
+{
+    "name": "Sherlock Holmes",
+    "courses": "Java"
+}
+
+###
+DELETE http://localhost:3000/students/61759f6d254d03caf01a9313
+
+###
+PATCH http://localhost:3000/students/6175b1187476cc3564dc0f06
+Content-Type: application/json
+
+{
+    "courses": "AIML"
+}
+
+###
+PUT http://localhost:3000/students/6175b1187476cc3564dc0f06
+Content-Type: application/json
+
+{
+    "name": "Vaibhavi",
+    "courses": "Web Dev"
+}
